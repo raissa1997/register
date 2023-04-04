@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+body{
+    margin: 5rem;
+    background-color: whitesmoke;
+}
+.navbar{
+    background-color: rgb(200, 203, 200);
+}
+.navbar h1 {
+    color: rgb(76, 212, 17);
+    margin-left: 8px;
+    margin:  2rem;
+
+  }
+.navbar button {
+    background-color: rgb(55, 212, 86);
+    border: none;
+    color: black;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    
+    font-size: 16px;
+    margin-right: 1px;
+    margin-left: 80%;
+    margin-top: -50%;
+  }
+
+button[type=button]{
+background-color :#4CAF50; 
+color :white; 
+padding :12px 20px; 
+border :none; 
+border-radius :4px; 
+cursor :pointer; 
+float :right; 
+}
+button[type=button]:hover{
+background-color :#45a049; 
+}
+label {
+    display:block;
+    margin-bottom:10px; 
+}
+  
+input[type=text], textarea {
+border-radius :5px; 
+padding :10px; 
+border :1px solid #ccc; 
+margin-bottom :20px; 
+width :100%; 
+box-sizing :border-box; 
+}
+input[type=date]{
+  border-radius :5px; 
+padding :10px; 
+border :1px solid #ccc; 
+margin-bottom :20px; 
+width :40%; 
+box-sizing :border-box;
+}
+
+#formContainer{
+  border-radius: 12Px;
+  border-color: aqua;
+  color: #0e130e;
+  
+}
+
+
+
+    </style>
+</head>
+<body>
+    
+      <div class="navbar">
+      <h1 id="demo">Experience</h1>
+  <button type="submit" onclick="myFunction()"> + </button>
+  </div>
+  
+  <div id="formContainer"></div>
+
+  
+
+
+  <script>
+    
+  function myFunction()
+  {
+    
+  
+    var form1 = document.createElement('div');
+  var btn=document.createElement("button");
+  formContainer.appendChild(form1);
+  //form1.appendChild(btn);
+
+  var label1 = document.createElement("label");
+  label1.innerHTML = "Établissement:";
+  form1.appendChild(label1);
+   
+  var input1 = document.createElement("input");
+ input1.type = "text";
+ form1.appendChild(input1);
+ var label2 = document.createElement("label");
+label2.innerHTML = "Date de début:";
+
+var input2 = document.createElement("input");
+input2.type = "date";
+
+form1.appendChild(label2);
+form1.appendChild(input2);
+
+var label3 = document.createElement("label");
+label3.innerHTML = "Date de fin:";
+label3.style.marginLeft="43%";
+label3.style.marginTop="-7.7%";
+
+var input3 = document.createElement("input");
+input3.type = "date";
+input3.style.marginLeft="43%";
+input3.style.marginTop="-7.7%";
+
+form1.appendChild(label3);
+form1.appendChild(input3);
+
+var label4 = document.createElement("label");
+label4.innerHTML = "En cours";
+label4.style.marginLeft="90%";
+label4.style.marginTop="-7%";
+
+var input4 = document.createElement("input");
+input4.type = "checkbox";
+input4.style.marginLeft="90%";
+input4.style.marginTop="-7%";
+
+form1.appendChild(label4);
+form1.appendChild(input4);
+
+var label5 = document.createElement("label");
+label5.innerHTML = "Tâches:";
+label5.style.marginTop="3%";
+
+var input5 = document.createElement("textarea");
+input5.style.height="100px";
+
+form1.appendChild(label5);
+form1.appendChild(input5);
+
+
+var removeButton = document.createElement('button');
+removeButton.innerHTML = 'Supprimer';
+removeButton.type="button";
+ removeButton.onclick= function() {
+    form1.remove();
+
+}
+
+
+
+form1.appendChild(removeButton);
+//form.appendChild(form1);
+
+ //formContaner.appendChild(form);
+}
+
+
+
+
+
+
+ 
+  </script>
+
+    
+</body>
+</html>
+   
+    
