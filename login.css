@@ -1,0 +1,43 @@
+.formulaire{
+    top:3rem;
+    bottom: 3rem;
+    position: relative;
+    height: max-content;
+    background-color:whitesmoke
+   
+}
+.form-group{
+    padding-bottom: 1rem;
+}
+
+#inscrip-form{
+    border: solid 3px blueviolet;
+    border-radius: 10px;
+}
+.log-form{
+    border: solid 3px blueviolet;
+    border-radius: 10px;
+}
+.fa-user{
+    margin-left: -10%;
+}
+.fa-envelope{
+    margin-left: -10%;
+}
+
+.space{
+    margin-left: 1rem;
+    width: 75%;
+    height: 2.3rem
+}
+.space1{
+    margin-right: 38%; 
+}
+.space2{
+    margin-right: 58%; 
+}
+.long{
+    width: 75%;
+    margin-left: -2%;
+
+}
